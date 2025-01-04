@@ -1,0 +1,279 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tripify - Seamless adventures, endless memories</title>
+    <!-- Use Tailwind CSS via CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles -->
+    <style>
+      :root {
+        --primary: #1e3d59;
+        --secondary: #ff6b6b;
+        --accent: #45b7d1;
+        --neutral: #f4f4f4;
+      }
+
+      .bg-primary {
+        background-color: var(--primary);
+      }
+      .bg-secondary {
+        background-color: var(--secondary);
+      }
+      .bg-accent {
+        background-color: var(--accent);
+      }
+      .bg-neutral {
+        background-color: var(--neutral);
+      }
+
+      .text-primary {
+        color: var(--primary);
+      }
+      .text-secondary {
+        color: var(--secondary);
+      }
+      .text-accent {
+        color: var(--accent);
+      }
+
+      .hover\:bg-primary:hover {
+        background-color: var(--primary);
+      }
+      .hover\:bg-secondary:hover {
+        background-color: var(--secondary);
+      }
+      .hover\:bg-accent:hover {
+        background-color: var(--accent);
+      }
+
+      .hover\:text-primary:hover {
+        color: var(--primary);
+      }
+      .hover\:text-secondary:hover {
+        color: var(--secondary);
+      }
+      .hover\:text-accent:hover {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body class="bg-neutral min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <span class="text-3xl font-bold text-primary"> Tripify </span>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-primary hover:text-accent transition-colors"
+              >Tours</a
+            >
+            <a href="#" class="text-primary hover:text-accent transition-colors"
+              >Agencies</a
+            >
+            <a href="#" class="text-primary hover:text-accent transition-colors"
+              >About</a
+            >
+            <button
+              class="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-all"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-primary text-white pt-24 pb-16">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Discover Pakistan's Beauty
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          Seamless adventures, endless memories
+        </p>
+        <button
+          class="bg-secondary text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-opacity-90 transform hover:scale-105 transition-all"
+        >
+          Start Your Journey
+        </button>
+      </div>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+        >
+          <div class="text-accent text-3xl mb-4">🏔️</div>
+          <h3 class="text-primary text-xl font-semibold mb-3">Curated Tours</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Handpicked experiences by verified local agencies, ensuring quality
+            and authenticity.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+        >
+          <div class="text-accent text-3xl mb-4">🌟</div>
+          <h3 class="text-primary text-xl font-semibold mb-3">
+            Verified Agencies
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Partner with the most trusted tour operators across Pakistan.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+        >
+          <div class="text-accent text-3xl mb-4">💎</div>
+          <h3 class="text-primary text-xl font-semibold mb-3">Best Value</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Competitive prices with no hidden costs for your peace of mind.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Destinations -->
+    <div class="bg-neutral py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-primary mb-12 text-center">
+          Popular Destinations
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+          >
+            <div class="h-48 bg-gray-200"></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-primary">Hunza Valley</h3>
+              <p class="text-gray-600 text-sm">Starting from PKR 25,000</p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+          >
+            <div class="h-48 bg-gray-200"></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-primary">Skardu</h3>
+              <p class="text-gray-600 text-sm">Starting from PKR 30,000</p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+          >
+            <div class="h-48 bg-gray-200"></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-primary">Fairy Meadows</h3>
+              <p class="text-gray-600 text-sm">Starting from PKR 28,000</p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+          >
+            <div class="h-48 bg-gray-200"></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-primary">Deosai Plains</h3>
+              <p class="text-gray-600 text-sm">Starting from PKR 35,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-primary text-white py-16">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Ready to Start Your Adventure?</h2>
+        <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          Join thousands of travelers discovering Pakistan's hidden gems
+        </p>
+        <div class="flex justify-center space-x-4">
+          <button
+            class="bg-secondary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-opacity-90 transition-all"
+          >
+            Browse Tours
+          </button>
+          <button
+            class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-white hover:text-primary transition-all"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <span class="text-2xl font-bold block mb-4">Tripify</span>
+            <p class="text-gray-400">
+              Your gateway to Pakistan's most amazing destinations
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <div class="space-y-2">
+              <a href="#" class="block text-gray-400 hover:text-white"
+                >About Us</a
+              >
+              <a href="#" class="block text-gray-400 hover:text-white">Tours</a>
+              <a href="#" class="block text-gray-400 hover:text-white"
+                >Agencies</a
+              >
+              <a href="#" class="block text-gray-400 hover:text-white"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Support</h4>
+            <div class="space-y-2">
+              <a href="#" class="block text-gray-400 hover:text-white"
+                >Help Center</a
+              >
+              <a href="#" class="block text-gray-400 hover:text-white"
+                >Safety</a
+              >
+              <a href="#" class="block text-gray-400 hover:text-white"
+                >Terms of Use</a
+              >
+              <a href="#" class="block text-gray-400 hover:text-white"
+                >Privacy Policy</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+            <div class="space-y-2 text-gray-400">
+              <p>Email: info@tripify.pk</p>
+              <p>Phone: +92 300 1234567</p>
+              <p>Address: Islamabad, Pakistan</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          © 2024 Tripify. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
