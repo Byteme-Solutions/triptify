@@ -1,106 +1,1165 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Byteme Solution - Under Construction</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <style>
-      .gradient-text {
-        background: linear-gradient(45deg, #3b82f6, #2563eb);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>Byte Me Solution</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-      @keyframes hourglassRotate {
-        0% {
-          transform: rotate(0deg);
-        }
-        25% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(180deg);
-        }
-        75% {
-          transform: rotate(180deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-      .hourglass-animation {
-        animation: hourglassRotate 4s infinite linear;
-        font-size: 4rem;
-        color: #3b82f6;
-      }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
-      .glow {
-        filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));
-      }
-    </style>
-  </head>
-  <body class="bg-gray-100 h-screen flex items-center justify-center">
-    <div class="text-center px-4">
-      <div class="animate__animated animate__fadeIn">
-        <!-- Construction Icon -->
-        <svg
-          class="w-32 h-32 mx-auto mb-10 text-blue-600"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-          />
-        </svg>
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Company Name -->
-        <h1
-          class="text-5xl font-bold gradient-text mb-6 animate__animated animate__fadeInUp animate__delay-1s"
-        >
-          Byteme Solution
-        </h1>
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-        <!-- Status Message -->
-        <p
-          class="text-2xl text-gray-600 mb-10 animate__animated animate__fadeInUp animate__delay-2s"
-        >
-          Our website is getting a makeover
-        </p>
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
-        <!-- Professional Hourglass Icon -->
-        <div class="flex justify-center mb-10">
-          <i class="fas fa-hourglass-half hourglass-animation glow"></i>
+  <!-- =======================================================
+    Theme Name: NewBiz
+    Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+<!---->         <h1  class="text-light" style="font-weight:bolder;"><a href="#header"><span>BMS</span></a></h1>  
+        <!--<a href="#intro" class="scrollto"><img src="img/logo3.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us </a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#techclients">Tech Clients</a></li>
+          <li ><a href="#clients">Clients</a>
+           <!-- <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>-->
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container">
+
+      <div class="intro-img">
+        <img src="img/intro-img.svg" alt="" class="img-fluid">
+      </div>
+
+      <div class="intro-info">
+        <h2>We provide<br><span>solutions</span><br>for your business!</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our Services</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+      <!--==========================
+      About Us Section
+    ============================-->
+      <section id="about">
+          <div class="container">
+
+              <header class="section-header">
+                  <h3>About Us</h3>
+                  <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+              </header>
+
+              <div class="row about-container">
+
+                  <div class="col-lg-6 content order-lg-1 order-2">
+                      <p>
+                          We are a collective group of highly skilled professionals with diverse expertise in various
+                          technologies, collaborating to deliver exceptional solutions across the globe. Our team
+                          consists of experienced individuals who specialize in software development, digital
+                          transformation, IT strategy, consulting, and quality assurance. With a focus on
+                          innovation and excellence, we are committed to empowering businesses by providing
+                          tailored services that address complex challenges and foster growth.
+                          Operating as a global entity, we have successfully served clients from multiple
+                          industries, including Healthcare, Fintech, Automotive, E-commerce, and more. Our
+                          commitment to delivering high-quality solutions and creating long-lasting partnerships
+                          drives us to stay at the forefront of technological advancements.
+                          By leveraging our combined experience and a shared vision, we strive to help
+                          businesses achieve their strategic goals and thrive in today’s competitive landscape.
+                          We believe in transparency, collaboration, and agility, ensuring that each solution is not
+                          only effective but also sustainable in the long run.
+
+                      </p>
+
+                      <!--<div class="icon-box wow fadeInUp">
+                      <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+                      <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+                      <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
+
+                    <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="icon"><i class="fa fa-photo"></i></div>
+                      <h4 class="title"><a href="">Magni Dolores</a></h4>
+                      <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+
+                    <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+                      <div class="icon"><i class="fa fa-bar-chart"></i></div>
+                      <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                      <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                    </div>-->
+
+                  </div>
+
+                  <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+                      <img src="img/about-img.svg" class="img-fluid" alt="">
+                  </div>
+              </div>
+
+              <div class="row about-extra">
+                  <div class="col-lg-6 wow fadeInUp">
+                      <img src="img/about-extra-1.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+                      <h4>Industry Leadership</h4>
+                      <p>
+                          Our leadership and professionals are actively contributing to the global technology
+                          ecosystem. As members of the Scrum Alliance, we uphold the highest standards of
+                          Agile practices and innovation. We maintain strategic affiliations with National
+                          Incubation Centers (NICs), Silicon Valley, Founder Institute, and other renowned
+                          technology hubs worldwide
+                      </p>
+                      <p>
+                          Our partnerships with top professionals and organizations
+                          across the globe enable us to share knowledge, promote industry best practices, and
+                          drive transformative change in the IT sector. These collaborations strengthen our ability
+                          to deliver cutting-edge solutions and establish ourselves as a key player in the industry
+
+                      </p>
+                  </div>
+              </div>
+
+              <div class="row about-extra">
+                  <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+                      <img src="img/about-extra-2.svg" class="img-fluid" alt="">
+                  </div>
+
+                  <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+                      <h4>Engagement Models</h4>
+                      <p>
+                          With a combined experience of over 24 years in delivering state-of-the-art IT services,
+                          our team is dedicated to innovation, creativity, and an unwavering commitment to
+                          excellence.
+                      </p>
+                      <p>
+                          This diverse expertise enables us to build impactful solutions that drive
+                          success for our clients.
+                      </p>
+                      <p>
+                          Our track record of long-standing partnerships with various
+                          organizations has allowed us to offer a complete spectrum of IT services, including
+                          resource augmentation, project delivery models, and digital transformation services.
+
+                      </p>
+                  </div>
+
+              </div>
+
+          </div>
+      </section><!-- #about -->
+      <!--==========================
+      Services Section
+    ============================-->
+      <section id="services" class="section-bg">
+          <div class="container">
+
+              <header class="section-header">
+                  <h3>Services</h3>
+                  <p>
+                      We provide flexible engagement models tailored to meet the unique needs of our
+                      clients. Our diverse engagement models allow us to collaborate seamlessly and deliver
+                      exceptional results, driving value and innovation for our clients worldwide.
+                  </p>
+              </header>
+
+              <div class="row">
+
+                  <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+                      <div class="box">
+                          <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+                          <h4 class="title">
+                              <a href="">
+                                  Efficient Technical Resourcing & Human Resource Management
+                              </a>
+                          </h4>
+                          <p class="description">
+                              Gain access to top-tier technology professionals without the burden of managing
+                              overhead costs. We take care of all technical skill development, licensing, and
+                              compliance needs, ensuring a smooth and scalable resource management
+                              experience
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+                      <div class="box">
+                          <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
+                          <h4 class="title"><a href="">Offshore Outsourcing & Agile Scrum Team Management</a></h4>
+                          <p class="description">
+                              Benefit from our expertise in Agile methodologies and offshore outsourcing,
+                              enabling you to achieve efficient project execution. Choose from diverse
+                              engagement models such as Time & Materials or Fixed Cost, with our team
+                              managing all tools, processes, and human resource allocations.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                          <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+                          <h4 class="title"><a href="">Digital Transformation & Agile Consulting</a></h4>
+                          <p class="description">
+                              Transform your business by leveraging our expertise in digital transformation and
+                              Agile consulting. From process optimization to implementation of cutting-edge
+                              technologies like AI, IoT, and Blockchain, we help you stay ahead in the digital
+                              landscape.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                          <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+                          <h4 class="title">
+                              <a href="">
+                                  Digital Lab & Minimum Viable Product (MVP) Development
+                              </a>
+                          </h4>
+                          <p class="description">
+                              Accelerate innovation with our Digital Lab approach, which offers rapid
+                              prototyping and MVP development. Our team manages the full lifecycle of
+                              product development, ensuring that your ideas turn into tangible, high-quality
+                              digital solutions.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+                      <div class="box">
+                          <div class="icon"><i class="ion-ios-world-outline" style="color: #d6ff22;"></i></div>
+                          <h4 class="title"><a href="">UI/UX</a></h4>
+                          <p class="description">Our design experts specialize in creating intuitive and visually stunning UI/UX solutions. From wireframes to polished interfaces, we blend creativity and functionality to deliver engaging designs.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+                      <div class="box">
+                          <div class="icon"><i class="ion-ios-clock-outline" style="color: #4680ff;"></i></div>
+                          <h4 class="title"><a href="">Quality Assurance</a></h4>
+                          <p class="description">Our dedicated Quality Assurance team meticulously tests and refines software solutions. From functionality to performance, we guarantee a flawless user experience.</p>
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+      </section><!-- #services -->
+      <!--==========================
+      Why Us Section
+    ============================-->
+      <section id="why-us" class="wow fadeIn">
+          <div class="container">
+              <header class="section-header">
+                  <h3>Why choose us?</h3>
+                  <p>We customize our work processes to suit the specific demands of your project, fostering an environment conducive to innovation. Our approach is geared towards not only meeting but surpassing your expectations, amplifying creativity and problem-solving throughout the entire development journey.</p>
+              </header>
+
+              <!--<div class="row row-eq-height justify-content-center">
+
+              <div class="col-lg-4 mb-4">
+                <div class="card wow bounceInUp">
+                    <i class="fa fa-diamond"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Corporis dolorem</h5>
+                    <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
+                    <a href="#" class="readmore">Read more </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card wow bounceInUp">
+                    <i class="fa fa-language"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Voluptates dolores</h5>
+                    <p class="card-text">Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
+                    <a href="#" class="readmore">Read more </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card wow bounceInUp">
+                    <i class="fa fa-object-group"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Eum ut aspernatur</h5>
+                    <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex. </p>
+                    <a href="#" class="readmore">Read more </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>-->
+
+              <div class="row counters">
+
+                  <div class="col-lg-3 col-6 text-center">
+                      <span data-toggle="counter-up">274</span>
+                      <p>Clients</p>
+                  </div>
+
+                  <div class="col-lg-3 col-6 text-center">
+                      <span data-toggle="counter-up">421</span>
+                      <p>Projects</p>
+                  </div>
+
+                  <div class="col-lg-3 col-6 text-center">
+                      <span data-toggle="counter-up">1,364</span>
+                      <p>Hours Of Support</p>
+                  </div>
+
+                  <div class="col-lg-3 col-6 text-center">
+                      <span data-toggle="counter-up">18</span>
+                      <p>Hard Workers</p>
+                  </div>
+
+              </div>
+
+          </div>
+      </section>
+      <!--==========================
+       Tech Clients Section
+     ============================-->
+      <section id="techclients" class="section-bg">
+
+          <div class="container">
+
+              <div class="section-header">
+                  <h3>Empowering Businesses as The Technology Partner</h3>
+                  <p>We are trusted tech partners, empowering businesses globally with innovative IT solutions. At Byte Me Solution, we specialize in delivering tailored technology services to drive growth and success.</p>
+              </div>
+              <!---->
+              <div class="row no-gutters clients-wrap clearfix wow fadeInUp ">
+
+                  <div class="col-lg-4 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img\partners\asquare.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img style="background:black;" src="img\partners\32nco.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img style="background:black;" src="img\partners\goads-logo.webp" class="img-fluid" alt="">
+                      </div>
+                  </div>
+                  <!--   <div class="col-lg-3 col-md-4 col-xs-6">
+               <div class="client-logo">
+                   <img style="background:black;" src="img/portfolio/client/beckwill-logo-02-150x150.png" class="img-fluid" alt="">
+               </div>
+           </div>-->
+
+
+              </div>
+
+          </div>
+
+      </section>
+
+      <!--==========================
+      Portfolio Section
+    ============================-->
+      <section id="portfolio" class="clearfix">
+          <div class="container">
+
+              <header class="section-header">
+                  <h3 class="section-title">Our Portfolio</h3>
+              </header>
+
+              <div class="row">
+                  <div class="col-lg-12">
+                      <ul id="portfolio-flters">
+                          <li data-filter="*" class="filter-active">All</li>
+                          <li data-filter=".filter-app">App</li>
+                          <!--<li data-filter=".filter-card">Card</li>-->
+                          <li data-filter=".filter-web">Web</li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="row portfolio-container">
+                  <!--App Start  -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/vehiMan.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">VehiMan</a></h4>
+                              <p>App</p>
+                              <div>
+                                  <a href="img/portfolio/vehiMan.png" data-lightbox="portfolio" data-title="Vehi Man" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/Medica.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">Medica</a></h4>
+                              <p>App</p>
+                              <div>
+                                  <a href="img/portfolio/Medica.png" class="link-preview" data-lightbox="portfolio" data-title="Medica" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/BCapp.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">BabyCare360</a></h4>
+                              <p>App</p>
+                              <div>
+                                  <a href="img/portfolio/BCapp.png" class="link-preview" data-lightbox="portfolio" data-title="Baby Care 360" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/qubed.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">Qubed</a></h4>
+                              <p>Qubed</p>
+                              <div>
+                                  <a href="img/portfolio/qubed.png" class="link-preview" data-lightbox="portfolio" data-title="Qubed" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/XRP-heathcare.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">Qubed</a></h4>
+                              <p>XRP Healthcare</p>
+                              <div>
+                                  <a href="img/portfolio/XRPH-Wallet.webp" class="link-preview" data-lightbox="portfolio" data-title="XRP" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!--App End  -->
+                  <!--WEB START  -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/web1.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">Bridge House Dental Care</a></h4>
+                              <p>Bridge House Dental Care</p>
+                              <div>
+                                  <a href="img/portfolio/web1.png" class="link-preview" data-lightbox="portfolio" data-title="BHT" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/web2.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">My Spanish Soul</a></h4>
+                              <p>My Spanish Soul</p>
+                              <div>
+                                  <a href="img/portfolio/web2.png" class="link-preview" data-lightbox="portfolio" data-title="Spanishsoul" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/web3.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">FLYWAYHUB</a></h4>
+                              <p>FLYWAY HUB</p>
+                              <div>
+                                  <a href="img/portfolio/web4.png" class="link-preview" data-lightbox="portfolio" data-title="FLYWAY" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/eretail1.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">E-Retail Point</a></h4>
+                              <p>E-Retail Point</p>
+                              <div>
+                                  <a href="img/portfolio/eretail1.png" class="link-preview" data-lightbox="portfolio" data-title="Eretail" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/carpethouseweb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">Carpet House</a></h4>
+                              <p>Carpet House</p>
+                              <div>
+                                  <a href="img/portfolio/carpethouseweb.png" class="link-preview" data-lightbox="portfolio" data-title="CPH" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/egonweb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">EGON</a></h4>
+                              <p>EGON</p>
+                              <div>
+                                  <a href="img/portfolio/egonweb.png" class="link-preview" data-lightbox="portfolio" data-title="Egon" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/FTI.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">Fitness Training Institute</a></h4>
+                              <p>Fitness Training Institute</p>
+                              <div>
+                                  <a href="img/portfolio/FTI.png" class="link-preview" data-lightbox="portfolio" data-title="FTI" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/MMBAweb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">MMBA</a></h4>
+                              <p>MMBA</p>
+                              <div>
+                                  <a href="img/portfolio/MMBAweb.png" class="link-preview" data-lightbox="portfolio" data-title="MMBA" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/parkitweb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">Park IT</a></h4>
+                              <p>Park IT</p>
+                              <div>
+                                  <a href="img/portfolio/parkitweb.png" class="link-preview" data-lightbox="portfolio" data-title="Parkit" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                          <img src="img/portfolio/nkeshopweb.png" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4><a href="#">NKeSHOP</a></h4>
+                              <p>NKeSHOP</p>
+                              <div>
+                                  <a href="img/portfolio/nkeshopweb.png" class="link-preview" data-lightbox="portfolio" data-title="NKeSHOP" title="Preview"><i class="ion ion-eye"></i></a>
+                                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <!--WEB End  -->
+                  <!--CARD start  -->
+                  <!--<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                                <div class="portfolio-wrap">
+                                    <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
+                                    <div class="portfolio-info">
+                                        <h4><a href="#">Card 2</a></h4>
+                                        <p>Card</p>
+                                        <div>
+                                            <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                                            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                                <div class="portfolio-wrap">
+                                    <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
+                                    <div class="portfolio-info">
+                                        <h4><a href="#">Card 1</a></h4>
+                                        <p>Card</p>
+                                        <div>
+                                            <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                                            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+                                <div class="portfolio-wrap">
+                                    <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
+                                    <div class="portfolio-info">
+                                        <h4><a href="#">Card 3</a></h4>
+                                        <p>Card</p>
+                                        <div>
+                                            <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                                            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                -->
+                  <!--CARD End  -->
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+
+          </div>
+      </section><!-- #portfolio -->
+      <!--==========================
+      Clients Section
+    ============================-->
+      <!--<section id="testimonials" class="section-bg">
+          <div class="container">
+
+              <header class="section-header">
+                  <h3>Testimonials</h3>
+              </header>
+
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+
+                      <div class="owl-carousel testimonials-carousel wow fadeInUp">
+
+                          <div class="testimonial-item">
+                              <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+                              <h3>Saul Goodman</h3>
+                              <h4>Ceo &amp; Founder</h4>
+                              <p>
+                                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                              </p>
+                          </div>
+
+                          <div class="testimonial-item">
+                              <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+                              <h3>Sara Wilsson</h3>
+                              <h4>Designer</h4>
+                              <p>
+                                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                              </p>
+                          </div>
+
+                          <div class="testimonial-item">
+                              <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+                              <h3>Jena Karlis</h3>
+                              <h4>Store Owner</h4>
+                              <p>
+                                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                              </p>
+                          </div>
+
+                          <div class="testimonial-item">
+                              <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+                              <h3>Matt Brandon</h3>
+                              <h4>Freelancer</h4>
+                              <p>
+                                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                              </p>
+                          </div>
+
+                          <div class="testimonial-item">
+                              <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+                              <h3>John Larson</h3>
+                              <h4>Entrepreneur</h4>
+                              <p>
+                                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                              </p>
+                          </div>
+
+                      </div>
+
+                  </div>
+              </div>
+
+
+          </div>
+      </section>--><!-- #testimonials -->
+      <!--==========================
+      Team Section
+    ============================-->
+      <!--<section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </div>
 
-        <!-- Additional Info -->
-        <p
-          class="text-xl text-gray-500 animate__animated animate__fadeInUp animate__delay-3s"
-        >
-          We're working hard to bring you something amazing.<br />
-          Thank you for your patience!
-        </p>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="img/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="img/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="img/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="img/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>-->
+      <!-- #team -->
+      <!--==========================
+      Clients Section
+    ============================-->
+      <section id="clients" class="section-bg">
+
+          <div class="container">
+
+              <div class="section-header">
+                  <h3>Our Clients</h3>
+                  <p>We are trusted by many, empowering businesses globally with innovative IT solutions. At Byte Me Solution, we specialize in delivering tailored technology services to drive growth and success.</p>
+              </div>
+
+              <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/Logo-MMBA-WP.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/BTL.jpg" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img style="background:black;" src="img/portfolio/client/beckwill-logo-02-150x150.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/bhdp-logo-1.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/carpet-house.webp" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/egon.jpeg" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/flyway.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/knocknshop-logo.jpg.webp" class="img-fluid" alt="">
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/logo-declassio.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/master-safety.webp" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/myspanishsoul-logo-round.avif" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/myspanishsoulblog.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/nkeshop-logo.webp" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/pak-indo-box-logo.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/park-it-uk.webp" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/sHIZAlogo.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/UNF-Logo-01.webp" class="img-fluid" alt="">
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/VAVELEU-LOGO.webp" class="img-fluid" alt="">
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/ziggy.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                      <div class="client-logo">
+                          <img src="img/portfolio/client/fti.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+      </section>
+
+      <!--==========================
+      Contact Section
+    ============================-->
+      <section id="contact">
+          <div class="container-fluid">
+
+              <div class="section-header">
+                  <h3>Contact Us</h3>
+              </div>
+
+              <div class="row wow fadeInUp">
+
+                  <div class="col-lg-6">
+                      <div class="map mb-4 mb-lg-0">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.5450292869173!2d72.99836574999999!3d33.66894885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95ff25ef0ae9%3A0xd74faf85d90645e5!2sG-11%20Markaz%20G%2011%20Markaz%20G-11%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory!5e0!3m2!1sen!2s!4v1737397820722!5m2!1sen!2s" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                      <div class="row">
+                          <div class="col-md-5 info">
+                              <i class="ion-ios-location-outline"></i>
+                              <p>G11 Marakaz Islamabad</p>
+                          </div>
+                          <div class="col-md-4 info">
+                              <i class="ion-ios-email-outline"></i>
+                              <p>info@bytemesolution.com</p>
+                          </div>
+                          <div class="col-md-3 info">
+                              <i class="ion-ios-telephone-outline"></i>
+                              <p>+923139987417</p>
+                          </div>
+                      </div>
+
+                      <div class="form">
+                          <div id="sendmessage">Your message has been sent. Thank you!</div>
+                          <div id="errormessage"></div>
+                          <form action="" method="post" role="form" class="contactForm">
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                      <div class="validation"></div>
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                      <div class="validation"></div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                  <div class="validation"></div>
+                              </div>
+                              <div class="form-group">
+                                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                  <div class="validation"></div>
+                              </div>
+                              <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                          </form>
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+      </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+                          <h1 style="font-weight:bolder;">BMS</h1>
+            <p>We provide flexible engagement models tailored to meet the unique needs of our clients. Our diverse engagement models allow us to collaborate seamlessly and deliver exceptional results, driving value and innovation for our clients worldwide.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <!--<li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+                G11 Markaz <br>
+                Islambad
+                Pakistan <br>+923139987417<br>
+                <strong>Email:</strong> info@bytemesolution.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <!--<div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>-->
+
+        </div>
       </div>
     </div>
-  </body>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Byte Me Solution</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+        -->
+        Designed by <a href="https://bytemesolution.com/">Byte Me Solution</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+<!--test-->
+
+<!--test end-->
+  <!-- JavaScript Libraries --> 
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
 </html>
